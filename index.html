@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈 Юра вчить англійську 🎈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>🌟 Привет, Юра! 🌟</h1>
+        <button onclick="startApp()">🚀 Начать 🚀</button>
+    </div>
+    
+    <div id="categories" style="display: none;">
+        <h2>🌈 Выбери тему 🌈</h2>
+        <button onclick="loadCategory('animals')">🐶 Животные</button>
+        <button onclick="loadCategory('transport')">🚗 Транспорт</button>
+        <button onclick="loadCategory('food')">🍎 Еда</button>
+        <button onclick="loadCategory('buildings')">🏡 Здания</button>
+        <button onclick="loadCategory('nature')">🌿 Природа</button>
+        <button onclick="loadCategory('toys')">🧸 Игрушки</button>
+    </div>
+    
+    <div id="game-area" style="display: none;">
+        <button onclick="goBack()">🔙 Назад</button>
+        <h2 id="category-title"></h2>
+        <div id="word-card">
+            <p id="word-text"></p>
+            <p id="word-transcription"></p>
+            <p id="word-meaning"></p>
+            <button onclick="prevWord()">⏪ Назад</button>
+            <button onclick="nextWord()">⏩ Вперед</button>
+        </div>
+    </div>
+
+    <div id="color-options">
+        <h3>🎨 Выбери цвет фона:</h3>
+        <button onclick="changeColor('lightblue')">🔵 Голубой</button>
+        <button onclick="changeColor('lightpink')">🌸 Розовый</button>
+        <button onclick="changeColor('lightgreen')">💚 Зеленый</button>
+        <button onclick="changeColor('yellow')">💛 Желтый</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
